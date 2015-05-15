@@ -264,13 +264,13 @@ body {
   padding-top: 100px;
   background: url("../img/background4.jpg");
   background-size: 100% auto;
-  color: #000;
+  color: #796564;
 }
 header {
   text-align: center;
 }
 .container {
-  background: #fff;
+  background: rgba(255,255,255,0.7);
   padding: 25px;
 }
 hr {
@@ -278,6 +278,12 @@ hr {
   width: 75%;
   border-top: 1px solid #000;
   border-bottom: none;
+}
+h1 {
+  color: #333;
+  margin: 0 auto;
+  width: 75%;
+  text-align: left;
 }
 h4 {
   width: 75%;
