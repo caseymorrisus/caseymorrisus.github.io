@@ -303,6 +303,41 @@ h4 {
   margin: 0 auto;
   text-align: justify;
 }
+img {
+  max-width: 100%;
+}
+.row {
+  margin-bottom: 30px;
+}
+.work img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+.work img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.codepen_work img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+.codepen_work img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.codepen {
+  text-align: center;
+}
+.codepen img {
+  width: 40%;
+  opacity: 0.8;
+}
 footer {
   position: absolute;
   width: 100%;
