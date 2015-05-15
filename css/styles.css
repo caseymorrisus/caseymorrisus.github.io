@@ -1,3 +1,286 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-  background: #f00;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  *behavior: url("/scripts/boxsizing.htc");
+/*	If you need support for IE7 and lower make 
+		sure the boxsizing.htc file is linked properly.
+		More info here:  https://github.com/Schepp/box-sizing-polyfill */
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container:after,
+.row:after,
+.col:after,
+.clr:after,
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  padding-bottom: 0em;
+}
+.col {
+  display: block;
+  float: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .gutters .col {
+    margin-left: 2%;
+  }
+  .gutters .col:first-child {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .span_1 {
+    width: 8.33333333333%;
+  }
+  .span_2 {
+    width: 16.6666666667%;
+  }
+  .span_3 {
+    width: 25%;
+  }
+  .span_4 {
+    width: 33.3333333333%;
+  }
+  .span_5 {
+    width: 41.6666666667%;
+  }
+  .span_6 {
+    width: 50%;
+  }
+  .span_7 {
+    width: 58.3333333333%;
+  }
+  .span_8 {
+    width: 66.6666666667%;
+  }
+  .span_9 {
+    width: 75%;
+  }
+  .span_10 {
+    width: 83.3333333333%;
+  }
+  .span_11 {
+    width: 91.6666666667%;
+  }
+  .span_12 {
+    width: 100%;
+  }
+  .gutters .span_1 {
+    width: 6.5%;
+  }
+  .gutters .span_2 {
+    width: 15%;
+  }
+  .gutters .span_3 {
+    width: 23.5%;
+  }
+  .gutters .span_4 {
+    width: 32%;
+  }
+  .gutters .span_5 {
+    width: 40.5%;
+  }
+  .gutters .span_6 {
+    width: 49%;
+  }
+  .gutters .span_7 {
+    width: 57.5%;
+  }
+  .gutters .span_8 {
+    width: 66%;
+  }
+  .gutters .span_9 {
+    width: 74.5%;
+  }
+  .gutters .span_10 {
+    width: 83%;
+  }
+  .gutters .span_11 {
+    width: 91.5%;
+  }
+  .gutters .span_12 {
+    width: 100%;
+  }
+}
+h1 {
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.25em;
+  letter-spacing: 1px;
+}
+h2 {
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: 700;
+  font-size: 2.25em;
+  line-height: 1.25em;
+}
+h3 {
+  font-family: 'Gentium Book Basic', serif;
+  font-weight: 400;
+  font-size: 1.75em;
+  line-height: 1.25em;
+}
+h4 {
+  font-family: 'Gentium Book Basic', serif;
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 1.22222222em;
+}
+blockquote {
+  font-size: 1.5em;
+  line-height: 1.45833333em;
+}
+body {
+  padding-top: 100px;
+  background: url("../img/background4.jpg");
+  background-size: 100% auto;
+  color: #000;
+}
+header {
+  text-align: center;
+}
+.container {
+  background: #fff;
+  padding: 25px;
+}
+hr {
+  margin: 15px auto;
+  width: 75%;
+  border-top: 1px solid #000;
+  border-bottom: none;
+}
+h4 {
+  width: 75%;
+  margin: 0 auto;
+  text-align: justify;
 }
