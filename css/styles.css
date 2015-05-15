@@ -269,15 +269,27 @@ a {
 html {
   width: 100%;
   height: 100%;
-}
-body {
-  width: 100%;
-  height: 100%;
-  padding-top: 100px;
   background: url("../img/background4.jpg");
   background-size: cover;
   background-position: center;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
   color: #796564;
+}
+body:after {
+  content: '';
+  background-image: url("http://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  opacity: 0.85;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 header {
   text-align: center;
