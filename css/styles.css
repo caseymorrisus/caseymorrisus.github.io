@@ -322,7 +322,7 @@ img {
   position: relative;
   height: 100%;
   width: 100%;
-  background: url("../img/background6.jpg");
+  background: url("../img/bg-small.jpg");
   background-size: cover;
   background-position: center;
   background-attatchment: fixed;
@@ -374,6 +374,21 @@ img {
 .top-section .container h4 span {
   color: #e39fff;
   opacity: 1;
+}
+@media screen and (min-width: 960px) and (max-width: 1249px) {
+  .top-section {
+    background-image: url("../img/bg-medium.jpg");
+  }
+}
+@media screen and (min-width: 1250px) and (max-width: 2999px) {
+  .top-section {
+    background-image: url("../img/bg-large.jpg");
+  }
+}
+@media screen and (min-width: 3000px) {
+  .top-section {
+    background-image: url("../img/bg-xlarge.jpg");
+  }
 }
 .row {
   margin-bottom: 30px;
