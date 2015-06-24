@@ -1,0 +1,445 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  *behavior: url("/scripts/boxsizing.htc");
+/*	If you need support for IE7 and lower make 
+		sure the boxsizing.htc file is linked properly.
+		More info here:  https://github.com/Schepp/box-sizing-polyfill */
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.container:after,
+.row:after,
+.col:after,
+.clr:after,
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  padding-bottom: 0em;
+}
+.col {
+  display: block;
+  float: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .gutters .col {
+    margin-left: 2%;
+  }
+  .gutters .col:first-child {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .span_1 {
+    width: 8.33333333333%;
+  }
+  .span_2 {
+    width: 16.6666666667%;
+  }
+  .span_3 {
+    width: 25%;
+  }
+  .span_4 {
+    width: 33.3333333333%;
+  }
+  .span_5 {
+    width: 41.6666666667%;
+  }
+  .span_6 {
+    width: 50%;
+  }
+  .span_7 {
+    width: 58.3333333333%;
+  }
+  .span_8 {
+    width: 66.6666666667%;
+  }
+  .span_9 {
+    width: 75%;
+  }
+  .span_10 {
+    width: 83.3333333333%;
+  }
+  .span_11 {
+    width: 91.6666666667%;
+  }
+  .span_12 {
+    width: 100%;
+  }
+  .gutters .span_1 {
+    width: 6.5%;
+  }
+  .gutters .span_2 {
+    width: 15%;
+  }
+  .gutters .span_3 {
+    width: 23.5%;
+  }
+  .gutters .span_4 {
+    width: 32%;
+  }
+  .gutters .span_5 {
+    width: 40.5%;
+  }
+  .gutters .span_6 {
+    width: 49%;
+  }
+  .gutters .span_7 {
+    width: 57.5%;
+  }
+  .gutters .span_8 {
+    width: 66%;
+  }
+  .gutters .span_9 {
+    width: 74.5%;
+  }
+  .gutters .span_10 {
+    width: 83%;
+  }
+  .gutters .span_11 {
+    width: 91.5%;
+  }
+  .gutters .span_12 {
+    width: 100%;
+  }
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1.25em;
+  letter-spacing: 1px;
+}
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2.25em;
+  line-height: 1.25em;
+}
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.75em;
+  line-height: 1.25em;
+}
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 1.22222222em;
+}
+blockquote {
+  font-size: 1.5em;
+  line-height: 1.45833333em;
+}
+a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 3px;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #222;
+  background: #8e44ad;
+}
+header {
+  text-align: center;
+}
+hr {
+  margin: 15px auto;
+  width: 75%;
+  border-top: 1px solid #000;
+  border-bottom: none;
+}
+h1 {
+  color: #333;
+  margin: 0 auto;
+  width: 75%;
+  text-align: left;
+}
+h4 {
+  width: 75%;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  text-align: left;
+  position: relative;
+  padding: 25px;
+  z-index: 1;
+}
+.page-wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+.page-wrapper:after {
+  content: "";
+  display: block;
+  height: 50px;
+}
+.top-section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url("../img/background6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attatchment: fixed;
+  text-align: center;
+}
+.top-section:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.top-section:after {
+  content: '';
+  background-image: url("../img/fabric.png");
+  opacity: 0.85;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+}
+.top-section .container {
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 800px;
+  min-width: 800px;
+  border: 5px solid #fff;
+  background: rgba(0,0,0,0.4);
+}
+.top-section .container .row {
+  margin-bottom: 0;
+}
+.top-section .container h1 {
+  text-align: center;
+  color: #fff;
+}
+.top-section .container h4 {
+  width: 100%;
+  margin: 0;
+  display: block;
+  text-align: center;
+  font-size: 1.7em;
+  white-space: nowrap;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.top-section .container h4 span {
+  color: #e39fff;
+  opacity: 1;
+}
+.row {
+  margin-bottom: 30px;
+}
+.work img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+.work img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.codepen_work img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+.codepen_work img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.codepen {
+  text-align: center;
+}
+.codepen img {
+  width: 40%;
+  opacity: 0.8;
+}
+.current-projects {
+  padding: 50px 0;
+  background: #efefef;
+  color: #111;
+}
+.current-projects a {
+  color: #8e44ad;
+}
+.current-projects .project {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+}
+.current-projects h1 {
+  color: #111;
+  margin: 0px 0px 25px 0px;
+}
+.current-projects .status {
+  color: #777;
+  margin-bottom: 25px;
+}
+.current-projects .description {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  line-height: 25px;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+}
+footer span {
+  color: #fff;
+}
