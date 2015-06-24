@@ -1,9 +1,7 @@
 (function(){
-<<<<<<< HEAD
 	var width = $(document).width();
 	var height = $(document).height();
 	var container = $('body');
-=======
 	var width = $(window).width();
 	var height = $(window).height();
 	var container = $('body');
@@ -40,7 +38,6 @@
 	function changeTopHeight(){
 		top_section.css('height', height);
 	};
->>>>>>> gh-pages
 
 	function screenRatio() {
 		if ( width > height ) {

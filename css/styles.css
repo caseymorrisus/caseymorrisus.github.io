@@ -129,11 +129,7 @@ table {
 		More info here:  https://github.com/Schepp/box-sizing-polyfill */
 }
 .container {
-<<<<<<< HEAD
-  max-width: 800px;
-=======
   max-width: 960px;
->>>>>>> gh-pages
   margin: 0 auto;
 }
 .container:after,
@@ -235,48 +231,31 @@ table {
     width: 100%;
   }
 }
-<<<<<<< HEAD
-h1 {
-  font-family: 'Alfa Slab One', cursive;
-=======
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 h1 {
   font-family: 'Raleway', sans-serif;
->>>>>>> gh-pages
   font-weight: 700;
   font-size: 3em;
   line-height: 1.25em;
   letter-spacing: 1px;
 }
 h2 {
-<<<<<<< HEAD
-  font-family: 'Alfa Slab One', cursive;
-=======
   font-family: 'Raleway', sans-serif;
->>>>>>> gh-pages
   font-weight: 700;
   font-size: 2.25em;
   line-height: 1.25em;
 }
 h3 {
-<<<<<<< HEAD
-  font-family: 'Gentium Book Basic', serif;
-=======
   font-family: 'Roboto', sans-serif;
->>>>>>> gh-pages
   font-weight: 400;
   font-size: 1.75em;
   line-height: 1.25em;
 }
 h4 {
-<<<<<<< HEAD
-  font-family: 'Gentium Book Basic', serif;
-=======
   font-family: 'Roboto', sans-serif;
->>>>>>> gh-pages
   font-weight: 400;
   font-size: 1.125em;
   line-height: 1.22222222em;
@@ -287,57 +266,24 @@ blockquote {
 }
 a {
   display: inline-block;
-<<<<<<< HEAD
-  color: #31756a;
-=======
   color: #fff;
->>>>>>> gh-pages
   text-decoration: none;
   padding: 0 3px;
 }
 html {
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
-  background: url("../img/background4.jpg");
-  background-size: cover;
-  background-position: center;
-=======
->>>>>>> gh-pages
 }
 body {
   position: relative;
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
-  padding-top: 100px;
-  color: #796564;
-}
-body:after {
-  content: '';
-  background-image: url("../img/fabric.png");
-  opacity: 0.85;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-=======
   color: #222;
   background: #8e44ad;
->>>>>>> gh-pages
 }
 header {
   text-align: center;
 }
-<<<<<<< HEAD
-.container {
-  background: rgba(255,255,255,0.7);
-  padding: 25px;
-}
-=======
->>>>>>> gh-pages
 hr {
   margin: 15px auto;
   width: 75%;
@@ -353,16 +299,10 @@ h1 {
 h4 {
   width: 75%;
   margin: 0 auto;
-<<<<<<< HEAD
-  text-align: justify;
-=======
->>>>>>> gh-pages
 }
 img {
   max-width: 100%;
 }
-<<<<<<< HEAD
-=======
 .container {
   text-align: left;
   position: relative;
@@ -435,7 +375,6 @@ img {
   color: #e39fff;
   opacity: 1;
 }
->>>>>>> gh-pages
 .row {
   margin-bottom: 30px;
 }
@@ -468,34 +407,6 @@ img {
   width: 40%;
   opacity: 0.8;
 }
-<<<<<<< HEAD
-.container {
-  position: relative;
-}
-.container:after {
-  content: '';
-  position: absolute;
-  left: 125px;
-  bottom: -135px;
-  width: 0px;
-  height: 0px;
-  border-top: 125px solid rgba(255,255,255,0.7);
-  border-bottom: 10px solid transparent;
-  border-left: 125px solid transparent;
-  border-right: 0px solid transparent;
-}
-footer {
-  position: absolute;
-  width: 100%;
-  padding: 15px;
-  bottom: 0;
-  background: rgba(255,255,255,0.35);
-  color: #222;
-  text-align: center;
-}
-footer span {
-  color: #31756a;
-=======
 .current-projects {
   padding: 50px 0;
   background: #efefef;
@@ -531,5 +442,4 @@ footer {
 }
 footer span {
   color: #fff;
->>>>>>> gh-pages
 }
