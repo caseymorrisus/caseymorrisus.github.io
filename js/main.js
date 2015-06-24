@@ -16,6 +16,14 @@
 
 	changeTopHeight();
 
+	/*$('.page-wrapper').imagesLoaded(function() {
+		console.log('All images have loaded.');
+	});*/
+
+	$('.top-section').waitForImages(function() {
+		console.log('All images have loaded');
+	});
+
 	function switchPassions(){
 		passion_elm.animate({
 			opacity: 0
