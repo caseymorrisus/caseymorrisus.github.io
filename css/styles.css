@@ -483,6 +483,7 @@ img {
 }
 .recent-pens img {
   vertical-align: top;
+  width: 100%;
 }
 .recent-pens .col {
   position: relative;
