@@ -316,11 +316,12 @@ img {
   color: #fff;
   z-index: 10;
   background: #8e44ad;
+  border-bottom: 1px solid #71368a;
 }
 .nav li {
   margin-right: -4px;
   display: inline-block;
-  border-right: 1px solid rgba(0,0,0,0.2);
+  border-right: 1px solid #71368a;
 }
 .nav li:last-of-type {
   border-right: none;
@@ -439,35 +440,6 @@ img {
 .row {
   margin-bottom: 30px;
 }
-.work img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
-  cursor: pointer;
-}
-.work img:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-.codepen_work img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
-  cursor: pointer;
-}
-.codepen_work img:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-.codepen {
-  text-align: center;
-}
-.codepen img {
-  width: 40%;
-  opacity: 0.8;
-}
 .current-projects {
   padding: 50px 0;
   background: #efefef;
@@ -481,6 +453,9 @@ img {
   margin-bottom: 25px;
   border-bottom: 1px solid #ccc;
 }
+.current-projects .project:last-of-type {
+  border-bottom: none;
+}
 .current-projects h1 {
   color: #111;
   margin: 0px 0px 25px 0px;
@@ -492,6 +467,59 @@ img {
 .current-projects .description {
   font-style: italic;
   margin-bottom: 5px;
+}
+.recent-pens {
+  padding-top: 45px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  background: #fff;
+  color: #000;
+}
+.recent-pens h1 {
+  color: #000;
+  margin: 0px 0px 25px 0px;
+}
+.recent-pens .row {
+  margin-bottom: 15px;
+}
+.recent-pens img {
+  vertical-align: top;
+}
+.recent-pens .col {
+  position: relative;
+  overflow: hidden;
+}
+.recent-pens .col:hover a {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+}
+.recent-pens a {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  background: #8e44ad;
+  text-align: center;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  opacity: 0;
+}
+.recent-pens a:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.recent-pens a span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.work {
+  background: #efefef;
 }
 footer {
   width: 100%;
