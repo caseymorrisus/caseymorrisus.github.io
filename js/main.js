@@ -15,14 +15,31 @@
 	}, 4000);
 
 	changeTopHeight();
+	preloadImages();
 
-	/*$('.page-wrapper').imagesLoaded(function() {
-		console.log('All images have loaded.');
-	});*/
+	function preloadImages() {
+		var imageSrc;
 
-	$('.top-section').waitForImages(function() {
-		console.log('All images have loaded');
-	});
+		if (width < 960) {
+			imageSrc = '../img/bg-small.jpg';
+		} else if (width >= 960 && width < 1250) {
+			imageSrc = '../img/bg-medium.jpg';
+		} else if (width >= 1250 && width < 3000) {
+			imageSrc = '../img/bg-large.jpg';
+		} else if (width >= 3000) {
+			imageSrc = '../img/bg-xlarge.jpg';
+		}
+
+		$('<img/>').attr('src', imageSrc).load(function() {
+			console.log('Hero image has loaded');
+			$('.page-loader').fadeOut(500, function() {
+				$('body').css('overflow', 'auto');
+			});
+		});
+	};
+
+
+	
 
 	function switchPassions(){
 		passion_elm.animate({
