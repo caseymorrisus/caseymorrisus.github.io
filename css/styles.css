@@ -443,6 +443,27 @@ img {
 .row {
   margin-bottom: 30px;
 }
+.about {
+  background: #fff;
+}
+.about h1 {
+  margin: 0 0 25px 0;
+  color: #000;
+}
+.about .portrait {
+  background: #efefef;
+  padding: 25px;
+  border: 1px solid #ccc;
+}
+.about .portrait p {
+  line-height: 1.6em;
+}
+.about .portrait img {
+  width: 200px;
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 25px;
+}
 .current-projects {
   padding: 50px 0;
   background: #efefef;
@@ -471,35 +492,42 @@ img {
   font-style: italic;
   margin-bottom: 5px;
 }
-.recent-pens {
+.recent-pens,
+.work {
   padding-top: 45px;
   border-top: 1px solid rgba(0,0,0,0.1);
   background: #fff;
   color: #000;
 }
-.recent-pens h1 {
+.recent-pens h1,
+.work h1 {
   color: #000;
   margin: 0px 0px 25px 0px;
 }
-.recent-pens .row {
+.recent-pens .row,
+.work .row {
   margin-bottom: 15px;
 }
-.recent-pens img {
+.recent-pens img,
+.work img {
   vertical-align: top;
   width: 100%;
 }
-.recent-pens .col {
+.recent-pens .col,
+.work .col {
   position: relative;
   overflow: hidden;
 }
-.recent-pens .col:hover a {
+.recent-pens .col:hover a,
+.work .col:hover a {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   opacity: 0.9;
 }
-.recent-pens a {
+.recent-pens a,
+.work a {
   color: #fff;
   position: absolute;
   top: 15px;
@@ -512,13 +540,15 @@ img {
   transition: all 200ms ease-in-out;
   opacity: 0;
 }
-.recent-pens a:before {
+.recent-pens a:before,
+.work a:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-.recent-pens a span {
+.recent-pens a span,
+.work a span {
   display: inline-block;
   vertical-align: middle;
 }
