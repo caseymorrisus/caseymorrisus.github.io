@@ -36,6 +36,10 @@
 				$('body').css('overflow', 'auto');
 			});
 		});
+
+		if($('.nav').hasClass('dont-load')) {
+			$('body').css('overflow', 'auto');
+		}
 	};
 
 
