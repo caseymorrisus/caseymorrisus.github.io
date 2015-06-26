@@ -301,6 +301,9 @@ h4 {
   width: 75%;
   margin: 0 auto;
 }
+strong {
+  font-weight: 700;
+}
 img {
   max-width: 100%;
 }
